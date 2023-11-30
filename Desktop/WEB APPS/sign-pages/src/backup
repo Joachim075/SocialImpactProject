@@ -1,0 +1,76 @@
+function App() {
+  const [currentPage, setCurrentPage] = useState('login');
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <MantineProvider>
+      <div>
+        
+        {/* Render the current page based on state */}
+        {currentPage === 'signup' && (
+          <SignUpPage onSignInClick={() => handlePageChange('login')} />
+        )}
+        {currentPage === 'login' && <LogInPage onSignUpClick={() => handlePageChange('signup')} />}
+        
+        
+        {currentPage === 'doctorsignup' && (
+          <DoctorSignUp onSignInClick={() => handlePageChange('login')} />
+        )}
+        {currentPage === 'doctorlogin' && (
+          <DoctorLogIn onSignInClick={() => handlePageChange('login')} />
+        )}
+      </div>
+      
+    </MantineProvider>
+  );
+
+
+
+
+
+
+
+
+  import React, { useState } from 'react';
+  import { MantineProvider } from '@mantine/core';
+  import '@mantine/core/styles.css';
+  import SignUpPage from './Componets/SignUpPage';
+  import DoctorSignUp from './Componets/DoctorSignUp';
+  import DoctorLogIn from './Componets/DoctorLogIn';
+  import LogInPage from './Componets/LogInPage';
+  
+  
+  function App() {
+    const [currentPage, setCurrentPage] = useState('signup');
+  
+    const handlePageChange = (page) => {
+      setCurrentPage(page);
+    };
+  
+    return (
+      <MantineProvider>
+        <div>
+          
+          {/* Render the current page based on state */}
+          {currentPage === 'signup' && (
+            <SignUpPage onSignInClick={() => handlePageChange('login')} />
+          )}
+          {currentPage === 'login' && <LogInPage onSignUpClick={() => handlePageChange('signup')} />}
+          
+          
+          {currentPage === 'doctorsignup' && (
+            <DoctorSignUp onSignInClick={() => handlePageChange('login')} />
+          )}
+          {currentPage === 'doctorlogin' && (
+            <DoctorLogIn onSignInClick={() => handlePageChange('login')} />
+          )}
+        </div>
+        
+      </MantineProvider>
+    );
+  }
+  
+  export default App;
