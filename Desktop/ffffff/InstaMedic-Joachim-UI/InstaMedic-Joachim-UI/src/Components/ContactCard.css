@@ -1,0 +1,132 @@
+#contact-section{
+    height: 100vh;
+    background-color: #D9EFF4;
+    display: flex;
+    flex-direction: column;
+}
+
+#cont-banner{
+    background-color: #0C90DA;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
+#cont-ban-text{
+    width: 60%;
+}
+
+#contact-section #cont-banner #cont-ban-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+#contact-section #cont-banner #cont-ban-text p{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    margin: auto;
+    width: 90%;
+}
+#contact-section #cont-banner img{
+    width: auto;
+    height: 90%;
+}
+
+.cont-butt{
+    background-color: #026e3a;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 7rem;
+    height: 2em;
+    border-radius: 13px;
+    margin: 4em;
+}
+.cont-butt:hover{
+    border-bottom: 33px solid rgb(61, 248, 4);
+    background-color: rgb(5, 82, 5);
+    transition:border-bottom 1s ease;
+    transform: scale(1.1);
+    color: rgb(5, 5, 230);    
+}
+
+#cont-table2{
+    margin:auto;
+    width: 60%;
+}
+
+#cont-socials{
+    width: 15%;    
+    font-size: 1.4rem;
+    margin: auto;
+}
+.soicials td{
+    text-align: center;
+}
+
+#group1{
+    margin-top: 5px;
+    padding: 35PX;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+.OSLC{
+    width: 85%;
+    height: 16.5%;
+    margin: auto;
+}
+.OSLC td{
+    text-align: center;
+}
+
+#table-2{
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+
+footer{
+    text-align: left;
+    font-size: 0.75rem;
+    height: 10%;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+}
+
+footer span{
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+
+
+/*Icons*/
+.fa-medium{
+    color: rgb(0, 16, 109);
+}
+.fa-facebook{
+    color: rgb(0, 16, 109);
+}
+.fa-instagram{
+    color: rgb(0, 16, 109);
+}
+.fa-whatsapp{
+    color: rgb(0, 16, 109);
+}
+.fa-linkedin{
+    color: rgb(0, 16, 109);
+}

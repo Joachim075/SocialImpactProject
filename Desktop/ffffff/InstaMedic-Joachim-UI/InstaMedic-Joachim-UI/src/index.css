@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Your other styles */
+.carousel {
+  /* Your styles for the .carousel class */
+}
+
+.carousel:hover .carouselControls {
+  opacity: 1;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+body{
+    background-color: #fcfcfc;
+    height: 100vh;
+    width: 100%;
+}
